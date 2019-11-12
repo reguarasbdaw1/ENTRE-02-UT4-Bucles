@@ -2,9 +2,11 @@ import java.util.Scanner;
 /**
  *   Clase de utilidades
  *   Incluye métodos estáticos
+ *   Autor - Richard Eguaras
  */
 public class Utilidades
 {
+   
     private static Scanner teclado = new Scanner(System.in);
     
     /**
