@@ -64,7 +64,7 @@ public class DemoBucles
         numero = numero - mayorPotencia;
         System.out.printf("%6d",  mayorPotencia);
         }
-        
+        System.out.println();
     }
 
     /**
@@ -80,13 +80,15 @@ public class DemoBucles
      */
     public void generarAleatorios(int n) 
     {
-        int aleatorio = generador.nextInt(255);
-        while()
+       int contador = 1;
+        while(contador <= n)
        {
-        escribirSumaPotencias(aleatorio);
+         int aleatorio = generador.nextInt(255);
+         escribirSumaPotencias(aleatorio);
+         System.out.println("\n");
+         contador++;
        }
-    
-
+       
     }
 
     /**
@@ -97,6 +99,11 @@ public class DemoBucles
     public void escribirCaracter(int n, char caracter)
     {
          
+         for (int linea = 1; linea <= n; linea++)
+         {
+             
+                System.out.printf("%3c",caracter);
+            }
     }
 
     /**
@@ -105,11 +112,22 @@ public class DemoBucles
      *  
      *   Usa bucles for
      */
-    public  void mostrarEscalera(int escalones, int alto, int ancho) {
-        System.out.println();
-
-         
-
-    }
+    // public  void mostrarEscalera(int escalones, int alto, int ancho) 
+    // {
+        
+        // for (int contador = 1;contador <= escalones; contador++)
+        // {
+           // escribirCaracter(ancho, '*');
+           // for ()
+           // {
+            
+           // }
+        // }
+        
+        
+           
+    // } 
+        
+    
 
 }
