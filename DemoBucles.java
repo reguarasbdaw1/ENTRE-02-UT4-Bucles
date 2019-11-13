@@ -56,12 +56,13 @@ public class DemoBucles
      */
     public void escribirSumaPotencias(int numero) 
     {
-        int mayorPotencia = mayorPotencia2(numero);
-        int descomposicion = 0;
-        while (descomposicion <= 1)
+        int mayorPotencia = numero;
+        System.out.printf("%6d = ", numero);
+        while (mayorPotencia >= 1)
         {
-        descomposicion = mayorPotencia/2;
-        System.out.printf("%6d",descomposicion);
+        mayorPotencia = mayorPotencia2(numero);
+        numero = numero - mayorPotencia;
+        System.out.printf("%6d",  mayorPotencia);
         }
         
     }
@@ -77,9 +78,14 @@ public class DemoBucles
      * Utiliza bucles while
      * 
      */
-    public void generarAleatorios(int n) {
-
-       
+    public void generarAleatorios(int n) 
+    {
+        int aleatorio = generador.nextInt(255);
+        while()
+       {
+        escribirSumaPotencias(aleatorio);
+       }
+    
 
     }
 
