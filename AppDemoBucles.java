@@ -26,27 +26,21 @@ public class AppDemoBucles
      */
     public static void main(String[] args)
     {
-         teclado = new Scanner(System.in);
-         bucle = new DemoBucles();
-         
+       teclado = new Scanner(System.in);
+       bucle = new DemoBucles();
+       System.out.println("Teclee tope de aleatorios a generar [10, 15]: ");
+       int tope = teclado.nextInt();
+       bucle.generarAleatorios(tope);
+       
+       Utilidades.hacerPausa();
+       Utilidades.hacerPausa();
+    
+       
+    
+    
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y
-     */
-    public String aleatorios()
-    {
-        System.out.println("Teclee tope de aleatorios a generar [10, 15]: ");
-        String aleatorios = teclado.nextLine();
-        if ()
-        {
-        
-        }
-        return aleatorios;
-    }
+   
 
 }
 
